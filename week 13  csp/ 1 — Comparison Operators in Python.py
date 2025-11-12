@@ -48,23 +48,28 @@ score = int(input("what is your score?"))
 #if the score is between 90 to 100 you get an A
 #if its 80 to 89 you get a B
 # 70 to 79 is a C
-if score >= 60:
-    print("You passed the test")
+# if score >= 60:
+#     print("You passed the test")
+# else:
+#     print("sucks, you didnt pass")
+
+# if score >= 90 and score <= 100:
+#     print("you got an A, nice work")
+
+# elif score >= 80 and score <=89:
+#     print("you got a B, thats ight")
+
+# elif score >= 70 and score <= 79:
+#     print("You got a C, cutting it close i C")
+
+# elif score >= 60 and score <= 69:
+#     print("You got a d, lock in")
+
+# else:
+#     print("You failed. Come see me during aclab.")
+
+password = input("What is your password?")
+if len(password) >= 8 and any(char.isdigit() for char in password):
+    print("password is valid")
 else:
-    print("sucks, you didnt pass")
-# password = input("What is your password?")
-
-if score >= 90 and score <= 100:
-    print("you got an A, nice work")
-
-elif score >= 80 and score <=89:
-    print("you got a B, thats ight")
-
-elif score >= 70 and score <= 79:
-    print("You got a C, cutting it close i C")
-
-elif score >= 60 and score <= 69:
-    print("You got a d, lock in")
-
-else:
-    print("You failed. Come see me during aclab.")
+    print("password is innvalid. It must be at least 8 characters long and cotain atleast on digit")
